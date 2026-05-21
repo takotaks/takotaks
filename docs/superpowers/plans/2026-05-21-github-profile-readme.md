@@ -1,3 +1,33 @@
+# GitHub Profile README Implementation Plan
+
+> **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
+
+**Goal:** Replace the default profile README with a playful developer card for Tacoo.
+
+**Architecture:** This is a Markdown-only profile README. The README uses centered HTML blocks where GitHub Markdown benefits from alignment, remote badge/stat SVGs for visual polish, and plain Markdown lists for readable content.
+
+**Tech Stack:** GitHub Markdown, Shields.io badges, Readme Typing SVG, GitHub Readme Stats, GitHub Streak Stats.
+
+---
+
+## File Structure
+
+- Modify: `README.md`
+  - Owns the public GitHub profile content shown on `takotaks/takotaks`.
+  - Contains the header, typing banner, stack badges, AI toolkit, current focus, stats, and closing line.
+
+## Tasks
+
+### Task 1: Replace Default README
+
+**Files:**
+- Modify: `README.md`
+
+- [ ] **Step 1: Replace the default template with the profile README**
+
+Write this complete content to `README.md`:
+
+```markdown
 <div align="center">
 
 # Hi, I'm Tacoo
@@ -73,3 +103,45 @@
 Thanks for stopping by. Check out my projects and follow along while I keep building.
 
 </div>
+```
+
+- [ ] **Step 2: Verify every approved stack item appears**
+
+Run:
+
+```powershell
+Select-String -Path 'README.md' -Pattern 'Python|JavaScript|React|HTML5|CSS3|Node.js|Git|VS Code|Linux|Hostinger|ChatGPT|Claude|GitHub Copilot|Cursor|Codex'
+```
+
+Expected: output includes matches for every approved tech and AI tool.
+
+- [ ] **Step 3: Verify stats use the correct username**
+
+Run:
+
+```powershell
+Select-String -Path 'README.md' -Pattern 'username=takotaks|user=takotaks'
+```
+
+Expected: output includes both GitHub Readme Stats URLs and the streak stats URL.
+
+- [ ] **Step 4: Review final README content**
+
+Run:
+
+```powershell
+Get-Content -LiteralPath 'README.md'
+```
+
+Expected: README shows the playful Tacoo profile and no longer contains the default GitHub template comment.
+
+- [ ] **Step 5: Commit implementation**
+
+Run:
+
+```powershell
+git add README.md docs\superpowers\plans\2026-05-21-github-profile-readme.md
+git commit -m "Update profile README"
+```
+
+Expected: commit succeeds with the README and plan changes.
