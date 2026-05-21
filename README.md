@@ -1,6 +1,6 @@
 <div align="center">
 
-# Hi, I'm Tacoo
+# Tacoo
 
 ### Python tinkerer, React explorer, and Node.js builder
 
