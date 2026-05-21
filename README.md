@@ -53,14 +53,9 @@
 
 ---
 
-## GitHub Stats
+## GitHub Activity
 
 <div align="center">
-
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=takotaks&show_icons=true&theme=tokyonight&hide_border=true" alt="Tacoo's GitHub stats" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=takotaks&layout=compact&theme=tokyonight&hide_border=true" alt="Tacoo's top languages" />
-
-<br />
 
 <img src="https://streak-stats.demolab.com?user=takotaks&theme=tokyonight&hide_border=true" alt="Tacoo's GitHub streak" />
 
